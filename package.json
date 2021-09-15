@@ -1,5 +1,5 @@
 {
-  "name": "kurento-utils",
+  "name": "kurento-utils-share",
   "version": "6.16.1-dev",
   "description": "Kurento JavaScript Utilities",
   "keywords": [
@@ -51,7 +51,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kurento/kurento-utils-js.git"
+    "url": "git+https://github.com/imaginegr8app/kurento-utils-source.git"
   },
   "main": "lib/index.js",
   "scripts": {
@@ -62,7 +62,9 @@
     "freeice": "^2.1.2",
     "hark": "^1.0.0",
     "inherits": "^2.0.0",
+    "kurento-browser-extensions": "*",
     "merge": "^1.2.0",
+    "save-dev": "0.0.1-security",
     "sdp-translator": "^0.1.15",
     "ua-parser-js": "^0.7.7",
     "uuid": "^3.0.0"
@@ -74,7 +76,7 @@
     "chromedriver": "74.0.0",
     "coveralls": "^3.0.0",
     "fs-extra": "^0.30.0",
-    "grunt": "^1.0.0",
+    "grunt": "^1.4.1",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-jshint": "^2.0.0",
@@ -87,7 +89,7 @@
     "minifyify": "^7.0.0",
     "node-static": "^0.7.6",
     "qunit-assert-canvas": "^1.0.6",
-    "qunit-reporter-junit": "KurentoForks/qunit-reporter-junit#1.0.3",
+    "qunit-reporter-junit": "github:KurentoForks/qunit-reporter-junit#1.0.3",
     "qunit-reporter-lcov": "^1.0.2",
     "qunitjs": "^1.23.1",
     "selenium-webdriver": "2.53.2",
@@ -95,5 +97,9 @@
   },
   "optionalDependencies": {
     "kurento-browser-extensions": "*"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }
